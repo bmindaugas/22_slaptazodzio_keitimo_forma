@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Slaptažodžio keitimas</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="main.js"></script>
+    <style>
+    .hidden {
+        display: none;
+    }
+    </style>
+</head>
+<body>
+    <div id="loadingimg" class="hidden">Slaptažodis keičiamas...</div>
+
+    <form action="change.php" method="POST" class="ajax">       
+        <input type="password" name="psw" id="2">
+        <label>Įveskite naują slaptžodį</label>
+        <br><br>
+        <input type="password" name="psw2" id="3">
+        <label>Pakartokite naują slaptžodį</label>
+        <br><br>
+        <input type="submit" value="Keisti">
+    </form>
+
+    <div id="result"></div>
+</body>
+</html>
